@@ -39,8 +39,8 @@
   }
 
   .profile-picture {
-    width: 0.6in;
-    height: 0.6in;
+    width: 0.3in;
+    height: 0.3in;
     overflow: hidden;
   }
 
@@ -112,7 +112,6 @@
   }
 
 .footer {
-  flex: 1;
   padding: 0.1in;
 }
 
@@ -156,4 +155,9 @@
   'wght' 200d,
   'GRAD' 10,
   'opsz' 48
+}
+
+.upper{
+  margin-bottom: 10px;
+
 }
