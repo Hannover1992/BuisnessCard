@@ -1,0 +1,136 @@
+
+
+
+  @page {
+    size: 3.5in 2in;
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .business-card {
+    width: 3.5in;
+    height: 2in;
+    overflow: hidden;
+    background-color: #1C1D20;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .header {
+    flex: 1;
+    display: flex;
+    padding: 0.1in;
+  }
+
+  .left-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-picture {
+    width: 0.6in;
+    height: 0.6in;
+    overflow: hidden;
+    margin-right: 0.1in;
+  }
+
+  .scaleLarge{
+    scale: 2.0;
+    margin-right: 0px;
+    margin-left:10px;
+  }
+
+  .round{
+    border-radius: 50%;
+  }
+
+  .qr-code{
+    width: 0.6in;
+    height: 0.6in;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 0.1in;
+  }
+
+  .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .right-header{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .tagline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .first-line {
+    font-size: 0.2in;
+    font-weight: bold;
+  }
+
+  .second-line {
+    font-size: 0.18in;
+  }
+
+  .divider {
+    height: 1px;
+    background-color: grey;
+  }
+
+.footer {
+  padding: 0.1in;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.07in; /* Slightly reduced font size */
+  gap: 0.08in; /* Add space between items */
+}
+
+.email, .phone, .website {
+  flex: 1;
+  /* background-color: #3c3c3c; */
+  border: 1px solid #666;
+  border-radius: 0.05in; /* Slightly reduced border radius */
+  padding: 0.03in 0.05in; /* Adjusted padding */
+  text-align: center; /* Center the text */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+}
+
+/* Adjust the flex basis to control width */
+.email { flex-basis: 40%; }
+.phone { flex-basis: 30%; }
+.website { flex-basis: 30%; }
+
+  @media print {
+    body { margin: 0; }
+    .business-card {
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+
