@@ -1,3 +1,5 @@
+
+
   @page {
     size: 3.5in 2in;
     margin: 0;
@@ -6,6 +8,7 @@
   body {
     margin: 0;
     padding: 0;
+
   }
 
   .business-card {
@@ -24,6 +27,7 @@
   }
 
   .header {
+    scale: 0.9;
     flex: 1;
     display: flex;
     padding: 0.1in;
@@ -39,6 +43,12 @@
     height: 0.6in;
     overflow: hidden;
     margin-right: 0.1in;
+  }
+
+  .scaleLarge{
+    scale: 2.0;
+    margin-right: 0px;
+    margin-left:10px;
   }
 
   .round{
@@ -88,7 +98,11 @@
   }
 
 .footer {
+  flex: 0.33;
   padding: 0.1in;
+  scale: 0.9;
+  display: flex;
+  align-items: center;
 }
 
 .contact-info {
@@ -122,3 +136,5 @@
       border: none;
     }
   }
+
+
